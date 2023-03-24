@@ -1,0 +1,46 @@
+<mat-card  fxLayout="column">
+    <div class="card" fxLayout="column">
+      <div fxLayout="row" fxLayoutAlign="space-between">
+        <p class="conocer-text">Conocer mi sobrino</p>
+        <p class="link">Revisar objetivo</p>
+      </div>
+  
+      <div fxLayout="row">
+        <p class="categoria-text">Categoría: Bienestar</p>
+      </div>
+    </div>
+  
+    <div fxLayout="row" fxLayoutAlign="center center" class="card-text">
+      <div fxLayout="column" fxLayoutGap="25px" fxLayoutAlign="center center">
+        <p>En esta fecha:</p>
+        <div class="blue caja">Diciembre/2022</div>
+      </div>
+  
+      <div fxLayout="column" fxLayoutGap="25px" fxLayoutAlign="center center">
+        <p>Lograrás:</p>
+        <div class="orange caja">{{ 6000000 | currency : 'USD' : 'symbol' : '1.0-0'}}</div>
+      </div>
+  
+      <div fxLayout="column" fxLayoutGap="25px" fxLayoutAlign="center center">
+        <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center">
+          <img class="img-item" src="assets/images/Icon awesome-star.png" />
+          <p>Ya cuentas con:</p>
+        </div>
+        <div class="green caja">{{ 0 | currency }}</div>
+      </div>
+    </div>
+  
+    <div fxLayout="row" fxFlex="100"class="alingText">
+        <div>
+          <mat-icon class="icon-color">check_circle</mat-icon>
+        </div>
+    
+        <div class="link">
+          <span>¡Asocia productos para monitorear tu progreso</span>
+        </div>
+     
+        <div><img class="imagen" src="../../../../assets/images/bandera.png" alt=""  fxLayoutAlign="end end"></div>
+    </div>
+   
+  </mat-card>
+  

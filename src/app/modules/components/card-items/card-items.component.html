@@ -1,0 +1,24 @@
+<mat-card class="mat-elevation-z4">
+    <div fxLayout="column" fxLayoutGap="30px" fxLayoutAlign="start start">
+      <div class="check" fxLayout="column" fxLayoutAlign="center end">
+        <mat-checkbox color="primary"> </mat-checkbox>
+      </div>
+  
+      <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+        <p class="text-bold">{{ item.nameProduct }}</p>
+        <p class="numbers">#{{ item.numberProduct }}</p>
+      </div>
+  
+      <div class="separator"></div>
+  
+      <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="5px">
+        <p class="text-bold">Ya cuentas con:</p>
+        <p class="text-value">{{ item.balanceProduct | currency : 'USD' : 'symbol' : '1.0-0' }}</p>
+      </div>
+  
+      <div class="items-detail">
+        <p>{{ item.detaildProduct }}</p>
+      </div>
+    </div>
+  </mat-card>
+  

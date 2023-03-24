@@ -1,0 +1,40 @@
+<app-header (buttonMenuEvent)="showFiller = !showFiller"></app-header>
+
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side" opened>
+    <mat-list role="list">
+      <mat-list-item
+        role="listitem"
+        *ngFor="let item of menu"
+        [ngClass]="{ active: item.selected }"
+      >
+        <div fxLayout="row" fxLayoutGap="15px" fxLayoutAlign="start">
+          <img
+            *ngIf="item.selected || showFiller"
+            (click)="showFiller = !showFiller"
+            class="img-item"
+            [src]="item.icon"
+          />
+          <p class="text-item-list" *ngIf="showFiller">{{ item.text }}</p>
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </mat-drawer>
+
+  <div class="sidenav-content" fxLayout="column" fxLayoutGap="30px">
+    <img class="image" src="assets/images/photo.jpg" />
+    <div
+      class="floating-components"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+      fxLayoutGap="30px"
+    >
+      <app-top-text></app-top-text>
+      <app-card-content></app-card-content>
+      <app-center-text value="6000000"></app-center-text>
+    </div>
+    <app-list-items [list]="listItems"></app-list-items>
+    <app-footer></app-footer>
+  </div>
+</mat-drawer-container>
+

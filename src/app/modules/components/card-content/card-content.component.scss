@@ -1,0 +1,82 @@
+mat-card {
+    width: 100%;
+  }
+  
+  .card{
+    padding: 20px;
+  }
+  
+  .card-text{
+    padding: 10px 0px 20px 0px;
+  }
+  
+  .conocer-text {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .aling-text{
+    margin-left: 10px;
+  }
+  
+  .link {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: underline;
+    color: #00c83c;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor:pointer;
+  }
+  
+  .icon-color{
+    color: #00c83c;
+  }
+  
+  .categoria-text {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .caja {
+    border-radius: 3px;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    width: 100px;
+  }
+  
+  .blue {
+    margin-right: 20px;
+    background-color: rgba(16, 151, 151, 0.438);
+  }
+  
+  .orange {
+    margin-right: 20px;
+    background-color: rgba(151, 88, 16, 0.438);
+  }
+  
+  .green {
+    margin-right: 20px;
+    background-color: rgba(16, 151, 68, 0.438);
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .mat-card {
+    padding: 30px;
+  }
+  
+  .imagen{
+    height: 70px;
+    width: 100%;
+  }
+  
+  .img-item {
+    width: 16px;
+    height: 16px;
+  }
+  

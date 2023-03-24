@@ -1,0 +1,35 @@
+<mat-toolbar color="ligth">
+  <button mat-icon-button color="primary" (click)="menuButton()">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <div fxLayout="row" fxLayoutGap="15px" fxLayoutAlign="center center" class="container-logo">
+    <img class="img-skandia" src="assets/images/Group 123.png" />
+    <div class="separator"></div>
+    <p class="plan">Plan Financiero Digital - FPX</p>
+  </div>
+
+  <span class="space"></span>
+
+  <div fxLayout="row" fxLayoutGap="15px">
+    <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
+      <img class="img-item" src="assets/images/Happy.png" />
+      <p class="links financial-text">Tu Financial Planner</p>
+    </div>
+
+    <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
+      <img class="img-item" src="assets/images/hand3.png" />
+      <p class="links aportes-text">Aportes</p>
+    </div>
+
+    <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
+      <img
+        (mouseenter)="showText = !showText"
+        (mouseleave)="showText = !showText"
+        class="img-item img-questions"
+      />
+      <p class="links questions-text" *ngIf="showText">Preguntas frecuentes</p>
+      <p class="questions-text" *ngIf="!showText"></p>
+    </div>
+  </div>
+</mat-toolbar>
